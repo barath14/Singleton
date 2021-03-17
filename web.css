@@ -13,54 +13,6 @@
 	background-size: cover;
 	position: absolute;
 }
-.navbar
-{
-    display: block;
-    align-items: center;
-    padding: 20px;
-    padding-left: 50px;
-    padding-right: 30px;
-    padding-top: 50px;
-}
-nav
-{
-    margin-top: -2rem;
-    flex: 1;
-    text-align: right;
-}
-nav ul 
-{
-    display: inline-block;
-    list-style: none;
-}
-nav ul li
-{
-    display: inline-block;
-    margin-right: 70px;
-}
-nav ul li a
-{
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    font-family: sans-serif;
-}
-nav ul li button
-
-{   
-    font-size: 20px;
-    color: white;
-    outline: none;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    font-family: sans-serif;
-}
- 
-#login-form
-{
-    display: inline;
-}
 .form-box
 {
     width:380px;
@@ -72,24 +24,92 @@ nav ul li button
     border-radius: 15px;
     
 }
+.input-group-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.check{
+    display: flex;
+    flex-direction: row;
+}
+.sign{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40%;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.menu nav ul li{
+    display: inline-block;
+    margin-right: 70px;
+}
+.menu nav ul li a{
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+}
+.fa-bars{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+img{
+    width:7rem;
+    height: auto;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -2rem;
+}
+.social img{
+    width: 30px;
+    margin: 4rem 12px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.form-box{
+    display: flex;
+    flex-direction: column;
+}
 .input-group-login
 {
-	position:absolute;
+    margin-top: .5rem;
+	display: flex;
+    flex-direction: column;
 	width:100%;
-
-    margin-left: -20px;
-     box-sizing: border-box;
+    box-sizing: border-box;
     font-size: 10px;
     color:lightgrey;
     font-weight: bold;
     font-family: sans-serif;
-    text-align: left;
 }
 .input-field
 {
-	width: 70%;
+	width: 90%;
 	padding:10px 0;
-	margin:5px 19px;
+	margin:5px 10px;
 	border-left:0;
 	border-top:0;
 	border-right:0;
@@ -101,12 +121,12 @@ nav ul li button
 }
 .sign-btn
 {
-	width: 75%;
+    position: relative;
+	width: 15rem;
+    margin-left: -5.3rem;
 	padding: 10px 30px;
 	cursor: pointer;
-	display: block;
     text-align: center;
-    margin-left: 20px;
 	background: rgb(151, 204, 151);
 	border: 0;
 	outline: none;
@@ -114,76 +134,36 @@ nav ul li button
 	border-radius: 30px;
     font-weight: bold;
 }
-.check-box
-{
-	margin: 30px 10px 34px 0;
-    border-radius: 20px;}
-span 
-{
-	color:#777;
-	font-size:12px;
-	bottom:68px;
-	position:absolute;
-}
-#login
-{
-	left:50px;
-}
-#login input
-{
-	color:white;
-	font-size:15;
-}
-.social{
-    margin: 330px 20px;
-    margin-left: 20px;
-    text-align: center;
-    word-spacing:-3px;
-}
-.social img{
-    width: 30px;
-    margin: 0 12px;
-    box-shadow: slategray;
-    cursor: pointer;
-    border-radius: 25px;
-}
-img {
-    width: 7rem;
-    height: auto;
-}
 label{
-    margin-left: 30px;
-}
-.input-field{
-    margin-left: 30px;
-}
-.check-box{
-    margin-left: 30px;
-    margin-top: 10px;
-}
-span.below{
-    margin-left: 80px;
-    margin-bottom: 65px;
-    color: lightgray;
-}
-span.or{
-    margin-left: 70px;
-    margin-bottom: 25px;
-    color: lightgray;
-}
-span.top{
-    color: white;
-    font-size: 20px;
-    display: flex;
-    justify-content:center ;
-    font-family: impact,'Arial Narrow Bold';
-    margin-left: 650px;
-    margin-bottom:460px;
+    margin-left:1.2rem ;
 }
 span.footer{
-    margin-left: 90px;
-    margin-bottom: -100px;
+    display: flex;
+    justify-content: center;
     color: white;
+}
+span.or{
+    display: flex;
+    justify-content: center;
+    color: lightgray;
     font-size: 10px;
-    font-family: sans-serif;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    
+    color: white;
+    font-family:'Copperplate',fantasy;
+    font-weight: 500;
+}
+span.above{
+    display: flex;
+    margin-left: .5rem;
+}
+input.check-box{
+    margin-left: 2rem;
+}
+span.below{
+    color: lightgrey;
+    font-size: 14px;
 }
